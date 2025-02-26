@@ -1,0 +1,14 @@
+{
+    "name": "kodefix/trenermateusz",
+    "autoload": {
+        "psr-4": {
+            "Kodefix\\Trenermateusz\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kodefix"
+        }
+    ],
+    "require": {}
+}
