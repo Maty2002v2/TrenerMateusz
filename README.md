@@ -1,0 +1,3 @@
+# Trener Mateusz
+
+## Setup Kodefix
