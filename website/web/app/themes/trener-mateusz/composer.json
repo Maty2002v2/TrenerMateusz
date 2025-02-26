@@ -1,13 +1,13 @@
 {
-    "name": "kodefix/trenermateusz",
+    "name": "prostestrony/trenermateusz",
     "autoload": {
         "psr-4": {
-            "Kodefix\\Trenermateusz\\": "src/"
+            "prostestrony\\Trenermateusz\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Kodefix"
+            "name": "prostestrony"
         }
     ],
     "require": {}

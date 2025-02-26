@@ -1,9 +1,9 @@
 <?php
-namespace Kodefix\Trenermateusz;
+namespace prostestrony\Trenermateusz;
 
 use Timber\Timber;
-use Kodefix\Trenermateusz\RestApi;
-use Kodefix\Trenermateusz\Multilang;
+use prostestrony\Trenermateusz\RestApi;
+use prostestrony\Trenermateusz\Multilang;
 
 class Theme
 {

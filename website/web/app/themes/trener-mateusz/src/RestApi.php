@@ -1,5 +1,5 @@
 <?php
-namespace Kodefix\Trenermateusz;
+namespace prostestrony\Trenermateusz;
 
 class RestApi extends \WP_REST_CONTROLLER
 {

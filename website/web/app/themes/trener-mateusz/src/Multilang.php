@@ -1,5 +1,5 @@
 <?php
-namespace Kodefix\Trenermateusz;
+namespace prostestrony\Trenermateusz;
 
 class Multilang
 {
