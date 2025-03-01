@@ -1,0 +1,11 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & span {
+        width: 20px;
+        height: 1px;
+        background-color: #333;
+    }
+}

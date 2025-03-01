@@ -1,10 +1,11 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-
-<div class="container front-page">
+<div class="container single-page">
   <div class="page-content">
-    {{ post.content }}
+    {% for post in posts %}
+        <div>{{post.title}}</div>
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

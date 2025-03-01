@@ -14,3 +14,21 @@
  * Importing by glob example
  * https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer#globbing
  */
+
+* {
+    font-family: Teko, sans-serif;
+}
+
+html {
+    margin: 0!important;
+}
+
+.show-mobile {
+    display: none;
+}
+
+@media (width <= 1200px) {
+    .show-mobile {
+        display: block;
+    }
+}
