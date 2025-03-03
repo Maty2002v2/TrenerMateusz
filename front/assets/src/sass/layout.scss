@@ -1,7 +1,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'components/**/*';
+@import 'components/index';
 @import 'tailwindcss/utilities';
+@import '../../../node_modules/swiper/swiper';
+@import '../../../node_modules/swiper/modules/navigation';
 
 /**
  * Importing by selector filtering example
