@@ -8,6 +8,9 @@
  */
 module.exports = {
     parser:  "@babel/eslint-parser",
+    parserOptions: {
+        requireConfigFile: false
+    },
     env:     {
         "es6":     true,
         "browser": true,
@@ -34,4 +37,12 @@ module.exports = {
         "/vendor/**/**/*.js",
         "/node_modules/**/**/*.js"
     ],
+    overrides: [
+        {
+            files: ["assets/src/js/**/*.js"],
+            parserOptions: {
+                sourceType: "module"
+            }
+        }
+    ]
 }

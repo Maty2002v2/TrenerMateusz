@@ -1,0 +1,19 @@
+{% if items %}
+    <div class="side-menu no-visibility" data-hamburger-target>
+        <div class="side-menu__backdrop" data-menu-backdrop></div>
+        <nav class="side-menu__menu">
+            <button class="close-button" data-hamburger-trigger>{% include 'icons/cross.twig' %}</button>
+            <div class="logo">
+                {% include 'logo/full.twig' %}
+            </div>
+            <ul>
+                {% for item in items %}
+                    {% include 'partials/menu/item-menu.twig' with {
+                        item: item,
+                        isActive: post.title == item.title
+                    } %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+{% endif %}
