@@ -1,0 +1,16 @@
+<li class="item-menu {{ isActive ? 'item-menu--active' : '' }}" {% if item.children|length > 0 %}data-has-children{% endif %}>
+    <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+    {% if item.children|length > 0 %}
+        <button class="plus">{% include 'icons/plus.twig' %}</button>
+        <div class="sub-menu">
+            <ul class="sub-menu__list">
+                {% for childItem in item.children %}
+                    {% include 'partials/menu/item-menu.twig' with {
+                        item: childItem,
+                        isActive: post.title == childItem.title
+                    } %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</li>

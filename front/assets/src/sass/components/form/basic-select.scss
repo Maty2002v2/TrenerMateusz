@@ -1,0 +1,75 @@
+// .basic-select--light {
+//     .basic-select__btn {
+//         background-color: #FFF;
+//     }
+//     .basic-select__arrow svg {
+//         fill: #252525;
+//     }
+//     &__menu {
+//         color: #fff
+//     }       
+// }
+
+.basic-select {
+    position: relative;
+    min-width: 200px;
+    height: 40px;
+    max-height: 40px;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+    &__btn {
+        padding: 8px 10px;
+        background-color: #252525;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 5px 15px #00000020;
+    }
+
+    &__arrow svg {
+        max-height: 15px;
+        max-width: 15px;
+        fill: #FFF;
+    }
+
+    &__menu {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px 0;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px #00000020;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top;
+        transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.3s ease;
+        z-index: 3;
+
+        &--open {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &__item {
+        color: #333;
+        padding: 8px 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        &.basic-select-item--active {
+            background-color: #f34e3a;
+            color: #FFF;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{% if menu %}
+    <header class="main-header" id="main-header">
+        <nav id="nav-main" class="nav-main">
+            <button class="hamburger" data-hamburger-trigger>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                {% include 'logo/full.twig' %}
+            </div>
+            <ul class="nav-main__list">
+                {% for item in items %}
+                    {% include 'partials/menu/item-menu.twig' with {
+                        item: item,
+                        isActive: post.title == item.title
+                    } %}
+                {% endfor %}
+                
+                <button data-search-box-trigger>{% include 'icons/search.twig' %}</button>
+            </ul>
+            <button class="show-mobile" data-search-box-trigger>{% include 'icons/search.twig' %}</button>
+        </nav>
+    </header>
+
+    <header class="hidden-menu sticky-header" id="sticky-header">
+        <nav class="nav-sticky">
+            <button class="hamburger" data-hamburger-trigger>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="logo">
+                {% include 'logo/full.twig' %}
+            </div>
+            <ul class="nav-main__list">
+                {% for item in items %}
+                    {% include 'partials/menu/item-menu.twig' with {
+                        item: item,
+                        isActive: post.title == item.title
+                    } %}
+                {% endfor %}
+                
+                <button data-search-box-trigger>{% include 'icons/search.twig' %}</button>
+            </ul>
+            <button class="show-mobile" data-search-box-trigger>{% include 'icons/search.twig' %}</button>
+        </nav>
+    </header>
+{% endif %}

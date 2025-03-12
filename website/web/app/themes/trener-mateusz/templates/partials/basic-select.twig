@@ -1,0 +1,16 @@
+<div class="basic-select" {% if id %}id="{{id}}"{% endif %} {% if required %}required{% endif %}>
+    <div class="basic-select__btn">
+        <span class="basic-select__selected-item">{{label}}</span>
+        <span class="basic-select__arrow">{% include 'icons/arrow-down.twig' %}</span>
+    </div>
+
+    <div class="basic-select__menu">
+        {% if items|length > 1 %}
+            {% for item in items %}
+                <div class="basic-select__item" data-value="{{item.value}}">{{item.label}}</div>
+            {% endfor %}
+        {% else %}
+            Brak danych
+        {% endif %}
+    </div>
+</div>
