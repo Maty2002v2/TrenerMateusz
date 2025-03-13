@@ -1,0 +1,58 @@
+.circle-border {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: rotate-circle 20s linear infinite;
+
+  &__dashes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    span {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: #f34e3a;
+        top: 50%;
+        left: 50%;
+        transform-origin: 0 0;
+
+        &:nth-child(1) { transform: rotate(0deg) translate(65px); }
+        &:nth-child(2) { transform: rotate(15deg) translate(65px); }
+        &:nth-child(3) { transform: rotate(30deg) translate(65px); }
+        &:nth-child(4) { transform: rotate(45deg) translate(65px); }
+        &:nth-child(5) { transform: rotate(60deg) translate(65px); }
+        &:nth-child(6) { transform: rotate(75deg) translate(65px); }
+        &:nth-child(7) { transform: rotate(90deg) translate(65px); }
+        &:nth-child(8) { transform: rotate(105deg) translate(65px); }
+        &:nth-child(9) { transform: rotate(120deg) translate(65px); }
+        &:nth-child(10) { transform: rotate(135deg) translate(65px); }
+        &:nth-child(11) { transform: rotate(150deg) translate(65px); }
+        &:nth-child(12) { transform: rotate(165deg) translate(65px); }
+        &:nth-child(13) { transform: rotate(180deg) translate(65px); }
+        &:nth-child(14) { transform: rotate(195deg) translate(65px); }
+        &:nth-child(15) { transform: rotate(210deg) translate(65px); }
+        &:nth-child(16) { transform: rotate(225deg) translate(65px); }
+        &:nth-child(17) { transform: rotate(240deg) translate(65px); }
+        &:nth-child(18) { transform: rotate(255deg) translate(65px); }
+        &:nth-child(19) { transform: rotate(270deg) translate(65px); }
+        &:nth-child(20) { transform: rotate(285deg) translate(65px); }
+        &:nth-child(21) { transform: rotate(300deg) translate(65px); }
+        &:nth-child(22) { transform: rotate(315deg) translate(65px); }
+        &:nth-child(23) { transform: rotate(330deg) translate(65px); }
+        &:nth-child(24) { transform: rotate(345deg) translate(65px); }
+    }
+  }
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
