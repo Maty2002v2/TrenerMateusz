@@ -13,7 +13,7 @@
         {% if item.image %}
           <div class="swiper-slide">
             <div class="slide-info">
-              <h2 class="slide-title">{{item.title}}</h2>
+              <h1 class="slide-title">{{item.title}}</h1>
               {% include 'partials/basic-button.twig' with {text: 'Sprawdź', link: item.link} %}
             </div>
             <img class="main-image" src="{{ item.image.url }}" alt=""/>
@@ -25,6 +25,8 @@
     </div>
 
     {% include 'partials/bmi-calculator.twig' %}
+
+    {% include 'partials/cooperation-steps.twig' %}
 
     {{ post.content }}
   </div>

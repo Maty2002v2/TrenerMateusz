@@ -12,6 +12,7 @@ import './search-box';
 import './swiper/home-page-swiper';
 import './basic-select';
 import './bmi-calculator';
+import './cooperation-steps';
 
 /**
  * Add here your JavasScript code
