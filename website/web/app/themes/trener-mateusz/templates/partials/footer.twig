@@ -1,3 +1,52 @@
-<footer>
-
+<footer id="footer">
+    <div class="upper-footer">
+        <div class="upper-footer__section upper-footer__about-me">
+            <h3 class="upper-footer__section-header">
+                <div class="logo">
+                    {% include 'logo/full.twig' %}
+                </div>
+            </h3>
+            <div>
+                {# <p class="contact-info">{% include 'icons/phone.twig' %} <a href="tel:+48784397636">784 397 636</a></p>
+                <p class="contact-info">{% include 'icons/mail.twig' %} <a href="mailto:matikster21@gmail.com">matikster21@gmail.com</a></p> #}
+            </div>
+        </div>
+        <div class="upper-footer__section">
+            <h3 class="upper-footer__section-header">Ostatnie posty</h3>
+            <div>
+                {% for post in recent_posts %}
+                    <p><a href="{{post.link}}" class="upper-footer__link">{{post.post_title}}</a></p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="upper-footer__section">
+            <h3 class="upper-footer__section-header">Tak działamy</h3>
+            <div class="hours">
+                <p>Poniedziałek <span>6:00-22:00</span></p>
+                <p>Wtorek <span>6:00-22:00</span></p>
+                <p>Środa <span>6:00-22:00</span></p>
+                <p>Czwartek <span>6:00-22:00</span></p>
+                <p>Piątek <span>6:00-22:00</span></p>
+                <p>Sobota <span>6:00-22:00</span></p>
+                <p>Niedziela <span>6:00-22:00</span></p>
+            </div>
+        </div>
+        <div class="upper-footer__section">
+            <h3 class="upper-footer__section-header">Kontakt</h3>
+            <div>
+                {{ function('do_shortcode', '[contact-form-7 id="464688f" title="footer-contact"]') }}
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div>
+            <div class="sub-footer__copyright">
+                <p>Copyright 2025 Trener Mateusz. All rights reserved. Implemented by <a href="https://www.facebook.com/profile.php?id=61567860361929">ProsteStrony.pl</a></p>
+            </div>
+            <div class="sub-footer__socials">
+                {% include 'icons/instagram.twig' %}
+                {% include 'icons/facebook.twig' %}
+            </div>
+        </div>
+    </div>
 </footer>
