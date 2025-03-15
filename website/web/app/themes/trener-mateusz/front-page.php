@@ -17,5 +17,11 @@ $context = Timber::get_context();
 $context['post'] = new Post();
 $context['acf'] = get_fields();
 
+$args = [
+    'post_type'      => 'post',
+    'posts_per_page' => 5
+];
+$context['recent_posts'] = Timber::get_posts($args);
+
 Timber::render('templates/front-page.twig', $context);
 ?>
