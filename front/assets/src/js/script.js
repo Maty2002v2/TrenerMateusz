@@ -13,6 +13,7 @@ import './swiper/home-page-swiper';
 import './basic-select';
 import './bmi-calculator';
 import './cooperation-steps';
+import './contact-form';
 
 /**
  * Add here your JavasScript code
