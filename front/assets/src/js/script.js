@@ -14,6 +14,7 @@ import './basic-select';
 import './bmi-calculator';
 import './cooperation-steps';
 import './contact-form';
+import './why-choose-me';
 
 /**
  * Add here your JavasScript code
